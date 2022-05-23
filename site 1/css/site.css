@@ -1,0 +1,63 @@
+.flexbox {
+  display: flex;
+  overflow: hidden;
+}
+
+.flexbox-text {
+  display: flex;
+  overflow: hidden;
+  margin: 0 5% 0 5%;
+}
+
+.flexbox-text p {
+  text-align: center;
+}
+
+.center {
+  width: 500%;
+}
+
+.descriptive-text {
+  font-size: 10pt;
+  font-family: georgia;
+  font-style: italic;
+  text-align: right;
+  margin:15% 5% 2.5% 0;
+}
+
+h1 {
+  font-size: 100px;
+  font-family: georgia;
+  position: fixed;
+  line-height: 70%;
+  left: 5%;
+  top: -6%;
+}
+
+.photo1 {
+  width: 90%;
+  height: 350px;
+  margin: -2% 5% 2.5% 5%;
+  border-radius: 400px 0% 0% 0%;
+  object-fit: cover;
+}
+
+#left-child {
+  margin: 0 2.5% 0 5%;
+  width: 60%;
+  overflow: hidden;
+}
+
+.photo2 {
+  width: 100%;
+}
+
+#right-child {
+  width: 40%;
+  margin: 0 5% 0 0;
+  overflow: hidden;
+}
+
+.photo3 {
+  width: 170%;
+}
