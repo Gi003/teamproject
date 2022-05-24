@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Test </title>
-	<link rel="stylesheet" type="text/css" href="site1/css/site.css">
+	<title> Quick Photo </title>
 	<link rel="stylesheet" type="text/css" href="css/site.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="js/site.js" defer> </script>
+	<link
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+				integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+				crossorigin="anonymous"
+				referrerpolicy="no-referrer"
+		/>
+
 </head>
 
 <body>
 
-	<h1> Testing photo </h1>
+	<h1> Quimg </h1>
 
 	<p class="descriptive-text">
-		Description of artist test test test test test test
+		This template is designed to
 		<br>
-		Test test test test test test
+		create more of a standard scrolling
 		<br>
-		Test test test test test test
+		portfolio. You access your own photos by
 		<br>
-		Test test test test test test
+		Clicking the buttons below 
  </p>
 
-	<img class="photo1" src="https://im.vsco.co/aws-us-west-2/dec8ab/6571191/608e1b6b533faa115084c0ba/vsco608e1b6dbd911.jpg?w=480">
+	<img id="icon" src="img/icon.png">
+	<img id="rate" src="img/star.png">
+
+	<img id="photo1" src="img/Suns.jpg">
 
 	<div class="flexbox">
 		<div id="left-child">
-			<img class="photo2" src="https://image-aws-us-west-2.vsco.co/dec8ab/6571191/615b451b8c21162f4567557f/vsco615b452359100.jpg">
+			<img id="photo2" src="https://image-aws-us-west-2.vsco.co/dec8ab/6571191/615b451b8c21162f4567557f/vsco615b452359100.jpg">
 			</div>
 		<div id="right-child">
-			<img class="photo3" src="https://im.vsco.co/aws-us-west-2/dec8ab/6571191/617eccd8e9aaba4b16a01ea6/vsco617ecce865ea5.jpg?w=480">
+			<img id="photo3" src="img/moon.jpg">
+			<img id="photo4" src="https://image-aws-us-west-2.vsco.co/dec8ab/6571191/620da4921b907b6d5b86c7bd/vsco620da49fc9c3a.jpg">
 		</div>
 	</div>
+
+	<input type="file" id="image_input" accept="image/png, image/jpg, image/gif,">
+	<input type="file" id="image_input2" accept="image/png, image/jpg, image/gif,">
+	<input type="file" id="image_input3" accept="image/png, image/jpg, image/gif,">
+	<input type="file" id="image_input4" accept="image/png, image/jpg, image/gif,">
+
+	<div class="feedback-container">
+      <div class="emoji-container">
+        <i class="far fa-angry fa-3x"></i>
+        <i class="far fa-frown fa-3x"></i>
+        <i class="far fa-meh fa-3x"></i>
+        <i class="far fa-smile fa-3x"></i>
+        <i class="far fa-laugh fa-3x"></i>
+      </div>
+      <div class="rating-container">
+        <i class="fas fa-star fa-2x active"></i>
+        <i class="fas fa-star fa-2x"></i>
+        <i class="fas fa-star fa-2x"></i>
+        <i class="fas fa-star fa-2x"></i>
+        <i class="fas fa-star fa-2x"></i>
+      </div>
+    </div>
 
 	<div class="flexbox-text">
 		<p> ❤︎ </p>
