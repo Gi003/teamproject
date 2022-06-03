@@ -1,0 +1,68 @@
+body {
+  overflow-y: hidden;
+  margin: 0;
+}
+
+#title {
+  font-size: 100px;
+  position: fixed;
+  line-height: 70%;
+  margin: 0;
+}
+
+#icon {
+  position: fixed;
+  width: 80px;
+  right: 0;
+}
+
+.shape-container {
+  display:flex;
+  margin: 0px;
+}
+
+/*Shape Attributes */
+.shape1 {
+  height:100px;
+  width: 100px;
+  margin: 5px;
+
+  background-color: red;
+}
+
+.shape2 {
+  height:400px;
+  width: 600px;
+  margin: 5px;
+
+  background-color: red;
+}
+
+.shape3 {
+  height:150px;
+  width: 300px;
+  margin: 5px;
+
+  border-radius: 75px 0 0 75px;
+  background-color: red;
+}
+
+.shape4 {
+  height:100px;
+  width: 100px;
+  position: fixed;
+  margin: 5px;
+
+  border-radius: 50%;
+  background-color: red;
+}
+
+/* Tree Attributes */
+.tree1 {
+  height: 400px;
+  width: 50px;
+  position:fixed;
+
+  background-color: white;
+  border: black 2px solid;
+}

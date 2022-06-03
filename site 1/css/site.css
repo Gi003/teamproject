@@ -83,7 +83,14 @@ h1 {
   margin: 0 5% 0 0;
   overflow: hidden;
 }
+/* Rating */
+.rating {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
   .feedback-container {
   background-color: white;
   width: 400px;
@@ -107,8 +114,8 @@ h1 {
 
 .far {
   margin: 1px;
-  transform: translateX(0);
-  transition: transform 0.2s;
+  transform: translateX(0px);
+  transition: transform 0.8s;
 }
 
 .rating-container {

@@ -51,32 +51,32 @@ image_input4.addEventListener("change", function(){
     document.querySelector("#photo4").src = uploaded_image4;
   })
   reader.readAsDataURL(this.files[0]);
+})
 
-  //rating
-  const starsEl = document.querySelectorAll(".fa-star");
-const emojisEl = document.querySelectorAll(".far");
-const colorsArray = ["red", "orange", "lightblue", "lightgreen", "green"];
+//rating device//
 
-updateRating(0);
+const starEl = document.querySelectorAll(".fa-star");
+const emojisEl = document.querySelectorAll(".far")
 
-starsEl.forEach((starEl, index) => {
+//Adding Click event//
+starEl.forEach((starEl, index) => {
   starEl.addEventListener("click", () => {
-    updateRating(index);
+    console.log("clicked", index);
+    updateRating(index)
   });
 });
-
+//Update rating//
 function updateRating(index) {
-  starsEl.forEach((starEl, idx) => {
-    if (idx < index + 1) {
+  starEl.forEach((starEl,idx) => {
+    if(idx < index + 1) {
       starEl.classList.add("active");
-    } else {
+    }
+
+    else{
       starEl.classList.remove("active");
     }
   });
-
-  emojisEl.forEach((emojiEl) => {
-    emojiEl.style.transform = `translateX(-${index * 50}px)`;
-    emojiEl.style.color = colorsArray[index];
-  });
+  emojisEl.forEach(emojiEl => {
+    emojiEl.style.transform = `translateX(-${index * 50 }px)`;
+  })
 }
-})

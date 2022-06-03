@@ -1,0 +1,92 @@
+body {
+  overflow-y: hidden;
+  margin: 0;
+}
+
+#title {
+  font-size: 80px;
+  position: fixed;
+  line-height: 70%;
+  margin: 0;
+  top: 10px;
+  left: 50vw;
+  transform:translateX(-50%);
+
+}
+
+#container {
+  width:100%;
+  position: fixed;
+  display: flex;
+  margin: 0px;
+  transform: ;
+  transition: transform 0.8s;
+}
+
+.thumbnail {
+  position: relative;
+  bottom: -70px;
+}
+
+.thumbnail-container {
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.viewer {
+  height: 550px;
+  width: 60%;
+  position: relative;
+  background-color: red;
+  border-radius: 40px;
+  bottom: 0px;
+
+}
+
+.viewer2 {
+  height: 550px;
+  width: 60%;
+  position: relative;
+  background-color: blue;
+  border-radius: 40px;
+  bottom: 0px;
+}
+
+.viewer3 {
+  height: 550px;
+  width: 60%;
+  position: relative;
+  background-color: green;
+  border-radius: 40px;
+  bottom: 0px;
+}
+
+.viewer4 {
+  height: 550px;
+  width: 60%;
+  position: relative;
+  background-color: orange;
+  border-radius: 40px;
+  bottom: 0px;
+}
+
+.icon {
+  position: fixed;
+  width: 80px;
+  right: 0;
+}
+
+.btn-container {
+width: 100%;
+position: fixed;
+display: flex;
+margin: 50vh 60px 0 60px;
+
+}
+
+#next {
+  margin-left: auto;
+  margin-right: 120px
+}
