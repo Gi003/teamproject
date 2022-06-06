@@ -1,19 +1,43 @@
 body {
   overflow-y: hidden;
   margin: 0;
+  background-color: black;
 }
 
 #title {
-  font-size: 100px;
-  position: fixed;
-  line-height: 70%;
-  margin: 0;
+  font-size: 550%;
+  font-family: georgia;
+  line-height: 80%;
+  margin: 15% 0 15% 5%;
 }
 
-#icon {
-  position: fixed;
-  width: 80px;
-  right: 0;
+.text-container {
+  display:flex;
+  margin: 0 0 0 5%;
+}
+
+.text{
+  text-align: center;
+  font-style: italic;
+}
+
+figure {
+  margin:auto;
+  height:200px;
+  display:flex;
+}
+
+figure img {
+  width: 200px;
+  height: 200px;
+}
+
+.menu {
+  visibility: hidden;
+}
+
+.menu-active {
+  visibility: visible;
 }
 
 .shape-container {
@@ -25,44 +49,428 @@ body {
 .shape1 {
   height:100px;
   width: 100px;
+  position:fixed;
   margin: 5px;
 
   background-color: red;
 }
 
-.shape2 {
-  height:400px;
-  width: 600px;
-  margin: 5px;
+.flexbox {
+  position: fixed;
+  display: flex;
+  margin: 0px;
+  z-index: -1;
+  transform: translateX();
 
-  background-color: red;
+  transition: transform 17s;
+  transition-timing-function: linear;
+}
+
+.shape-container2 {
+  width:100vw;
+  position:relative;
+  justify-content: center;
+  align-items:center;
+}
+
+.shape-container3 {
+  width:100vw;
+  position:relative;
+  justify-content: center;
+  align-items:center;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+.shape-container4 {
+  width:100vw;
+  position:relative;
+  justify-content: center;
+  align-items:center;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+
+#flex-shape1 {
+  height:100vh;
+  width: 100vw;
+
+  overflow: hidden;
+
+  background-color:rgb(89, 24, 24);
+}
+
+#flex-shape2 {
+  height: 400px;
+  width: 600px;
+
+  overflow:hidden;
+
+  margin-top:25vh;
+  margin-left:auto;
+  margin-right:auto;
+  bottom: 50%;
+  
+  overflow: hidden;
+
+  background-color: rgb(51, 174, 119);
+  border-radius: 10% 10% 10% 10%;
+}
+
+.flex-shape3 {
+ height: 300px;
+  width: 500px;
+
+  margin:auto;
+  margin-top: 2%;
+  align-items: center;
+
+  overflow: hidden;
+
+  background-color: rgb(0, 0, 0);
 }
 
 .shape3 {
   height:150px;
   width: 300px;
-  margin: 5px;
+
+  position:fixed;
+  margin: 65vh 0 0 0;
+  transform: translateX(170vw);
 
   border-radius: 75px 0 0 75px;
-  background-color: red;
+  background-color: blue;
+  
+  overflow: hidden;
+  
+  transition: transform 17s;
+  transition-timing-function: linear;
 }
 
 .shape4 {
-  height:100px;
-  width: 100px;
+  height:200px;
+  width: 200px;
+
   position: fixed;
-  margin: 5px;
+  margin: 25px 0 0 5px;
+  transform:translateX(130vw);
+  z-index:0;
 
   border-radius: 50%;
-  background-color: red;
+  background-color: rgb(63, 88, 133);
+  
+  overflow: hidden;
+  
+  transition: transform 17s;
+  transition-timing-function: linear;
 }
 
-/* Tree Attributes */
-.tree1 {
-  height: 400px;
-  width: 50px;
-  position:fixed;
+/*img*/
+ img {
+  height:100%;
+  display: block;
+  margin:auto;
+}
 
-  background-color: white;
+#first-photo {
+  width:100%;
+  height:auto;
+  margin-right: 0%;
+}
+
+#photo3 {
+  width:100%;
+  height:auto;
+  bottom:100px;
+}
+
+#photo4 {
+  width:100%;
+  height:auto;
+  bottom:100px;
+}
+
+#photo5 {
+  width:100%;
+  height:auto;
+  bottom:100px;
+  margin-left: 0%;
+}
+
+#photo6 {
+  width:100%;
+  height:auto;
+  bottom:100px;
+}
+
+#photo7 {
+  width:100%;
+  height:auto;
+  bottom:100px;
+}
+
+
+/* Tree Attributes */
+
+
+/*Level 1 Main Trees*/
+#begin-tree {
+  height: 100vh;
+  width: 40%;
+
+  position:fixed;
+  transform: ;
+  z-index:0;
+  
+  background-color: rgb(255, 255, 255);
   border: black 2px solid;
+
+  transition: transform 10s;
+  transition-timing-function: linear;
+}
+
+#end-tree {
+  height: 100vh;
+  width: 40%;
+
+  position:fixed;
+  transform:translateX(360vw);
+  z-index:5;
+  
+  background-color: rgb(255, 255, 255);
+  border: black 2px solid;
+
+  transition: transform 10s;
+  transition-timing-function: ease;
+  animation-delay:10s;
+}
+
+/*Level 2 Frontward Tree */
+.tree1 {
+  height: 100vh;
+  width: 10%;
+
+  position:fixed;
+  transform: translateX(95vw);
+  z-index:0;
+
+  background-color: rgb(159, 159, 159);
+  border: black 2px solid;
+
+  transition: transform 15s;
+  transition-timing-function: linear;
+}
+
+.tree2 {
+  height: 100%;
+  width: 70px;
+
+  position:fixed;
+  transform: translateX(195vw);
+
+  background-color: rgb(161, 161, 161);
+  border: black 2px solid;
+
+  transition: transform 15s;
+  transition-timing-function: linear;
+}
+
+.tree3 {
+  height: 100%;
+  width: 70px;
+
+  position:fixed;
+  transform: translateX(295vw);
+
+  background-color: rgb(161, 161, 161);
+  border: black 2px solid;
+
+  transition: transform 15s;
+  transition-timing-function: linear;
+}
+
+.tree4 {
+  height: 100%;
+  width: 70px;
+
+  position:fixed;
+  transform: translateX(395vw);
+
+  
+  background-color: rgb(161, 161, 161);
+  border: black 2px solid;
+
+  transform: ;
+  transition: transform 15s;
+  transition-timing-function: linear;
+}
+
+/*Level 3 */
+.tree5 {
+  height: 100%;
+  width: 50px;
+
+  position:fixed;
+  transform: translateX(220vw);
+  z-index: -2;
+  
+  background-color: rgb(78, 78, 78);
+  border: black 2px solid;
+
+  transition: transform 19s;
+  transition-timing-function: linear;
+}
+
+.tree6 {
+  height: 100vh;
+  width: 10%;
+
+  position:fixed;
+  transform: translateX(280vw);
+  z-index: -2;
+  
+  background-color: rgb(78, 78, 78);
+  border: black 2px solid;
+
+  transition: transform 19s;
+  transition-timing-function: linear;
+}
+/*Level 4 */
+.tree7 {
+  height: 100vh;
+  width: 10%;
+
+  position:fixed;
+  transform: translateX(160vw);
+  z-index: -3;
+  
+  background-color: rgb(56, 56, 56);
+  border: black 2px solid;
+
+  transition: transform 22s;
+  transition-timing-function: linear;
+}
+
+.tree8 {
+  height: 100vh;
+  width: 10%;
+
+  position:fixed;
+  transform: translateX(250vw);
+  z-index: -3;
+  
+  background-color: rgb(55, 55, 55);
+  border: black 2px solid;
+
+  transition: transform 22s;
+  transition-timing-function: linear;
+}
+
+/*Buttons */
+#forward {
+  height: 20%;
+  width: 80%;
+
+  margin: 0 10% 0 10%;
+  z-index:3;
+
+  font-size: 34px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #8d3100;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(72, 24, 24);
+
+}
+
+#forward:hover {background-color: #8d3100}
+
+#forward:active {
+  background-color: #8d3100;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#backward {
+   height: 20%;
+  width: 80%;
+
+  margin: 20% 10% 0 10%;
+  z-index:3;
+
+  font-size: 34px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #8d3100;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(72, 24, 24);
+}
+
+#backward:hover {background-color: #8d3100}
+
+#backward:active {
+  background-color: #8d3100;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+/* Rating */
+.rating {
+  margin: 0;
+  display: flex;
+  position: static;
+  justify-content: center;
+  align-items: center;
+  margin-top:25%
+
+}
+  .feedback-container {
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+
+.emoji-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  overflow: hidden;
+}
+
+.far {
+  margin: 1px;
+  transform: translateX(0px);
+  transition: transform 0.8s;
+}
+
+.rating-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20%;
+}
+
+.fa-star {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.fa-star.active {
+  color: gold;
 }

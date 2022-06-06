@@ -5,34 +5,146 @@
 	<link rel="stylesheet" type="text/css" href="css/site.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="js/site.js" defer> </script>
+	
+	<link
+				rel="stylesheet"
+				href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+				integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+				crossorigin="anonymous"
+				referrerpolicy="no-referrer"
+		/>
+
 </head>
 
 <body>
-	<p id="title"> Quimg </p>
-	<img id="icon" src= img/icon.png>
+<div>
+	<div id="begin-tree">
+		<p id="title"> Quimg</p>
+		<p class="text">
+			Layout created in 6.14.22  <br>
+			Made for a more inmersive display <br>
+			Using a sideshow format while implementing perspective 
+		</p>
+		<div class="text-container">
+			<figure tabindex="-1">
+  				<img id="icon" src="img/icon.png" />
+
+  				<nav class="menu">
+					<ul>
+						<li>
+							<input type="file" id="image_input" accept="image/png, image/jpg, image/gif,">
+						</li>
+						<li>
+							<input type="file" id="image_input2" accept="image/png, image/jpg, image/gif,">
+						</li>
+						<li>
+							<input type="file" id="image_input3" accept="image/png, image/jpg, image/gif,">
+						</li>
+						<li>
+							<input type="file" id="image_input4" accept="image/png, image/jpg, image/gif,">
+						</li>
+						<li>
+							<input type="file" id="image_input5" accept="image/png, image/jpg, image/gif,">
+						</li>
+						<li>
+							<input type="file" id="image_input6" accept="image/png, image/jpg, image/gif,">
+						</li>
+						<li>
+							<input type="file" id="image_input7" accept="image/png, image/jpg, image/gif,">
+						</li>
+					</ul>
+  				</nav>
+			</figure>
+		</div>
+		<button id="forward">Start</button>
+	</div>
+
+	<div id="end-tree">
+		<!-- Rating Device-->
+		<div class="rating">
+			<div class="feedback-container">
+			  <div class="emoji-container">
+				<i class="far fa-angry fa-3x"></i>
+				<i class="far fa-frown fa-3x"></i>
+				<i class="far fa-meh fa-3x"></i>
+				<i class="far fa-smile fa-3x"></i>
+				<i class="far fa-laugh fa-3x"></i>
+			  </div>
+			  <div class="rating-container">
+				<i class="fas fa-star fa-2x active"></i>
+				<i class="fas fa-star fa-2x"></i>
+				<i class="fas fa-star fa-2x"></i>
+				<i class="fas fa-star fa-2x"></i>
+				<i class="fas fa-star fa-2x"></i>
+			  </div>
+			</div>
+		</div>
+		<button id="backward">Rewind</button>
+	</div>
 
 	<div class="tree1">
 	</div>
 
-	<div class="shape-container">
-		<div class="shape4">
-		</div>
+	<div class="tree2">
 	</div>
-	<div class="shape-container">
-		<div class="shape1">
-		</div>
+
+	<div class="tree3">
 	</div>
-	<div class="shape-container">
-		<div class="shape2">
-		</div>
+
+	<div class="tree4">
 	</div>
+
+	<div class="tree5">
+	</div>
+
+	<div class="tree6">
+	</div>
+
+	<div class="tree7">
+	</div>
+
+	<div class="tree8">
+	</div>
+</div>
+
 	<div class="shape-container">
 		<div class="shape3">
+			<img id="photo6" src="img/light.jpg">
 		</div>
 	</div>
-	<div class="shape-container">
-		<div class="shape4">
+
+	<div class="shape4">
+		<img id="photo7" src="img/bridge.jpg">
+	</div>
+
+	<div class="flexbox">
+		<div class="shape-container1">
+			<div id="flex-shape1">
+				<img id="first-photo" src="img/suns.jpg">
+			</div>
 		</div>
+
+		<div class="shape-container2">
+			<div id="flex-shape2">
+				<img id="photo2" src="img/overhead.jpg">
+			</div>
+		</div>
+
+		<div class="shape-container3">
+			<div class="flex-shape3">
+				<img id="photo3" src="img/dark.jpg">
+			</div>
+			<div class="flex-shape3">
+				<img id="photo4" src="img/tree.jpg">
+			</div>
+		</div>
+
+		<div class="shape-container4">
+			<div id="flex-shape1">
+				<img id="photo5" src="img/moons.jpg">
+			</div>
+		</div>
+		
 	</div>
 	
 </body>

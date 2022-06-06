@@ -1,6 +1,8 @@
 body {
-  margin: 0px
+  margin: 0px;
+  overflow-x: hidden;
 }
+
 /** Main  **/
 #flexbox {
   display:flex;
@@ -10,27 +12,26 @@ body {
 /*Left section */
 #flex-left {
   width: 47%;
-  height: 100%
+  height: 100vh;
+  align-content: center;
 }
 
 #flex-left #main_image {
   width: 50%;
-  height: auto;
-  max-height: 100vh;
+  height: 100vh;
   position: fixed;
   z-index: -1;
 }
 
 #flex-left p {
   font-size: 128px;
-  font-family: Arial, Helvetica, sans-serif;
   color: white;
   position: fixed;
 }
 
 #flex-spacer {
-  width: 47%;
-}
+  width: 40%;
+} 
 
 /*Marginal left content */
 #portal {
@@ -41,6 +42,12 @@ body {
   left: 10px;
 }
 
+#title {
+  margin:10% 10% 10% 25%;
+  transform: translateX(-50%);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 /*Right Section */
 #flex-right {
   width: 53%;
@@ -48,12 +55,13 @@ body {
   margin: 0 30px 0 0;
 
 }
+
 /* Marginal right content */
 
 .titles {
   font-size: 100px;
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0px 0px 0px 40%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0px 10% 0px 10%;
 }
 
 .body {
@@ -62,16 +70,10 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 29px;
-  margin: 0px 0px 0px 40%;
+  margin: 0px 10% 0px 10%;
   text-indent: 30px;
 }
-
 /*------------------*/
-.images_container {
-  display: flex;
-  margin: 0px 0px 64px 0px;
-  float: right;
-}
 
 .image_link {
   margin: 0px 0px 0px 0px;
@@ -79,16 +81,30 @@ body {
   border-radius: 40px
 }
 
-.image_thumb {
-  width: 174px;
-  xheight: 100px;
-  xmargin: 0px 130px 0px 15px;
-  xborder-radius: 60px;
-
-}
-
 li {
   margin: 0px 0px 0px 40%;
   list-style-type: square;
   font-size: 12px;
+}
+
+.images_container {
+  display: flex;
+  margin: 42px 10% 64px 10%;
+}
+
+figure {
+  display: flex;
+}
+
+#icon {
+  width:30%;
+  margin: auto;
+}
+
+.menu {
+  visibility: hidden;
+}
+
+.menu-active {
+  visibility: visible;
 }
